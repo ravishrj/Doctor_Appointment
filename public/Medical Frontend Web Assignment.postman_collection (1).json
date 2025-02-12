@@ -1,0 +1,1108 @@
+
+{
+	"info": {
+		"_postman_id": "979a4bfc-66ba-4781-9831-8ad31ce806d5",
+		"name": "Medical Frontend Web Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21312090"
+	},
+	"item": [
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "SIgn Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Dr. Ankit Gupta\",\n    \"email\":\"silverag2002@gmail.com\",\n    \"password\":\"Abcd@123\",\n    \"type\":\"Cardiologist\"\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-doctor/sign-up"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Dr. Ankit Gupta\",\n    \"email\":\"silverag2002@gmail.com\",\n    \"password\":\"Abcd@123\",\n    \"type\":\"Cardiologist\"\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-doctor/sign-up"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 13:21:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4Njc1Mjc3LCJleHAiOjE3NDEyNjcyNzd9.GeZtARDWbm7FBDk318bHOkHtYVov48ix22i1SN4L1XE\",\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"silverag2002@gmail.com\",\n        \"name\": \"Dr. Ankit Gupta\",\n        \"type\": \"Cardiologist\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"silverag2002@gmail.com\",\n    \"password\":\"Abcd@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-doctor/login"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"silverag2002@gmail.com\",\n    \"password\":\"Abcd@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-doctor/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 13:23:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4Njc1NDA4LCJleHAiOjE3NDEyNjc0MDh9.lEUcPvCE6OtFvyqDKgzCwIQd1ZTpGPv4iJ4-LMtzXkc\",\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"silverag2002@gmail.com\",\n        \"name\": \"Dr. Ankit Gupta\",\n        \"type\": \"Cardiologist\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Appointments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{JWT_TOKEN}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/assignment-appointment/appointment?date=2025-02-06",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"assignment-appointment",
+								"appointment"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-02-06"
+								}
+							]
+						},
+						"description": "Here send date =2025-02-06 to get appointments for the date\n\nSend month=March to get appointments for the month"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/assignment-appointment/appointment?date=2025-02-06",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"assignment-appointment",
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-02-06"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "326"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 16:04:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_time\": \"2025-02-06T05:15:00.000Z\",\n        \"id\": 2,\n        \"createdAt\": \"2025-02-04T15:51:02.080Z\",\n        \"updatedAt\": \"2025-02-04T15:51:02.080Z\",\n        \"comments\": \"FUll Commebt\",\n        \"doctor\": {\n            \"id\": 1,\n            \"name\": \"Dr. Ankit Gupta\",\n            \"email\": \"silverag2002@gmail.com\",\n            \"type\": \"Cardiologist\"\n        },\n        \"patient\": {\n            \"id\": 1,\n            \"name\": \"Saswata Patra\",\n            \"email\": \"saswatapatra@gmail.com\"\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Saswata Patra\",\n    \"email\":\"saswatapatra@gmail.com\",\n    \"password\":\"Abcd@123\"\n\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-patient/sign-up"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Saswata Patra\",\n    \"email\":\"saswatapatra@gmail.com\",\n    \"password\":\"Abcd@123\"\n\n\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-patient/sign-up"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "219"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 13:34:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4Njc2MDU4LCJleHAiOjE3NDEyNjgwNTh9.YtZOYQXfoeT1IOIZyJOQox1P4MMjAO3QB_uRLLrTnik\",\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"saswatapatra@gmail.com\",\n        \"name\": \"Saswata Patra\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"saswatapatra@gmail.com\",\n    \"password\":\"Abcd@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-patient/login"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"saswatapatra@gmail.com\",\n    \"password\":\"Abcd@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-patient/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "219"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 13:35:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzM4Njc2MTI5LCJleHAiOjE3NDEyNjgxMjl9.pUszmpUXG-DvFYVz005cO46QdeYmnrQ7MaoXrlBh-tw\",\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"saswatapatra@gmail.com\",\n        \"name\": \"Saswata Patra\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Appointments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{JWT_TOKEN}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/assignment-appointment/appointment?date=2025-02-06",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"assignment-appointment",
+								"appointment"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-02-06"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/assignment-appointment/appointment?date=2025-02-06",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"assignment-appointment",
+										"appointment"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-02-06"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Content-Length",
+									"value": "326"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 16:11:48 GMT"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Server",
+									"value": "railway-edge"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "X-Railway-Request-Id",
+									"value": "Q8cNgtDaS_2Eg3UdkDSeqQ_98031763"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"date_time\": \"2025-02-06T10:45:00.000Z\",\n        \"id\": 2,\n        \"createdAt\": \"2025-02-04T21:21:02.080Z\",\n        \"updatedAt\": \"2025-02-04T21:21:02.080Z\",\n        \"comments\": \"FUll Commebt\",\n        \"doctor\": {\n            \"id\": 1,\n            \"name\": \"Dr. Ankit Gupta\",\n            \"email\": \"silverag2002@gmail.com\",\n            \"type\": \"Cardiologist\"\n        },\n        \"patient\": {\n            \"id\": 1,\n            \"name\": \"Saswata Patra\",\n            \"email\": \"saswatapatra@gmail.com\"\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "New Appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{JWT_TOKEN}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"doctor\":1,\n    \"patient\":1,\n    \"appointmentDateTime\":\"2025-02-04T14:07:55.401Z\",\n    \"comments\":\"High Fever\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-appointment/appointment"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"doctor\":1,\n    \"patient\":1,\n    \"appointmentDateTime\":\"2025-02-04T14:07:55.401Z\",\n    \"comments\":\"High Fever\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-appointment/appointment"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 15:15:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"date_time\": \"2025-02-04T14:07:55.401Z\",\n    \"createdAt\": \"2025-02-04T15:15:02.190Z\",\n    \"updatedAt\": \"2025-02-04T15:15:02.190Z\",\n    \"comments\": \"High Fever\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reschedule Exisitng Appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{JWT_TOKEN}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"appointmentDateTime\":\"2025-03-04T14:07:55.401Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BASE_URL}}/assignment-appointment/appointment/1"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"appointmentDateTime\":\"2025-03-04T14:07:55.401Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BASE_URL}}/assignment-appointment/appointment/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 15:19:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"date_time\": \"2025-03-04T14:07:55.401Z\",\n    \"createdAt\": \"2025-02-04T15:15:02.190Z\",\n    \"updatedAt\": \"2025-02-04T15:19:57.824Z\",\n    \"comments\": \"High Fever\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Appointment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{JWT_TOKEN}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "{{BASE_URL}}/assignment-appointment/appointment/1"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{BASE_URL}}/assignment-appointment/appointment/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Security-Policy",
+									"value": "connect-src 'self' https:;img-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;media-src 'self' data: blob: dl.airtable.com capricon-medical-assistant.s3.ap-south-1.amazonaws.com;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": ""
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Strapi <strapi.io>"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 04 Feb 2025 15:24:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Appointment deleted successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "https://api.mediconnect.in/api",
+			"type": "string"
+		},
+		{
+			"key": "JWT_TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidHlwZSI6IkRPQ1RPUiIsImlhdCI6MTczODY4MzMzOCwiZXhwIjoxNzQxMjc1MzM4fQ.h7dWFkbSmGpRIXUTN1WafW3lg2rh1DyRjxqSZrZhBS0",
+			"type": "string"
+		}
+	]
+}
