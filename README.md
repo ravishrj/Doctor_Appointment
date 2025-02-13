@@ -1,3 +1,47 @@
+Doctor Appointment Booking System
+This is a Doctor Appointment Booking System built using Next.js, Firebase, and Tailwind CSS. The system allows patients to book appointments with doctors while doctors can view their scheduled appointments.
+
+🛠 Tech Stack Used
+Frontend: Next.js, React, Tailwind CSS
+Backend: Firebase Firestore, Firebase Authentication
+Database: Firestore (Cloud Database)
+Authentication: Firebase Auth (Email & Password)
+State Management: useState, useEffect
+👤 User Roles & Authentication
+Users (Patients & Doctors) can sign up with their email.
+The role (Doctor/Patient) is defined during signup.
+Authentication is handled via Firebase Authentication.
+User data (name, email, role) is stored in Firestore (users collection).
+📅 Appointment Booking
+Patients can book appointments with doctors.
+Doctors can view their scheduled appointments.
+Appointments are stored in Firestore (appointments collection).
+Each appointment includes:
+Doctor Name & Email
+Patient Name & User ID
+Date & Time of Appointment
+🩺 Doctor Data (Mock Data)
+We use mock data for doctors, which includes:
+Name, Specialization, Experience, Location, and Email.
+Doctors must sign up using the email from the mock data to be recognized as a doctor.
+🔍 Features
+✅ User authentication (Signup, Login, Logout)
+✅ Role-based access (Doctors & Patients)
+✅ Firebase Firestore Database integration
+✅ Appointment Booking System
+✅ Doctor-specific appointment viewing
+✅ Search doctors by Name & Specialization
+✅ Responsive UI with Tailwind CSS
+
+📌 Notes
+Doctors must sign up using the email from the mock data.
+Patients can search for doctors using name or specialization.
+Appointments are stored in Firebase Firestore.
+The app is fully responsive and works on both desktop & mobile.
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
